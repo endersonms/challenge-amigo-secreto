@@ -20,3 +20,13 @@ function listaDeAmigos() {
          lista.appendChild(itemLista);
      }
 }
+
+function sortearAmigo() {
+    if (amigos.length > 0) {
+        let sorteado = Math.floor(Math.random() * amigos.length);
+        let resultado = document.getElementById("resultado");
+        resultado.innerHTML = amigos[sorteado];
+    } else {
+        alert("Por favor, insira um nome antes de sortear.");
+    }
+}
